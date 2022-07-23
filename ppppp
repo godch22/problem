@@ -1,0 +1,115 @@
+# a = True
+# b = False
+# print(type(a))
+# print(type(b))
+
+# print(bool("python"), bool("")) #-> True False
+# print(bool([1, 2, 3]), bool([])) #-> True False
+# print(bool((1, 2)), bool(())) #-> True False
+# print(bool({'1' : 1}),bool ({})) #-> True False
+# print(bool(-3), bool(0)) #-> True False 정수는 0만 거짓, 나머지 정수는 모두 참
+# print(bool(None))
+
+# 조건문
+# if 조건문1:
+# 실행문 1
+# elif 조건문2:
+# 실행문
+# else:
+# 실행문
+
+# if True:
+#     if False:
+#         print("A")
+#     else:
+#         print("B")
+# else:
+#     if True:
+#         print("C")
+#     else:
+#         print("D")
+# print("E")
+
+# a = 3
+# b = 4
+# if a > b:
+#     print(a)
+
+# a = int(input("a : "))
+# b = int(input("b : "))
+#
+# if a > b:
+#     print("a가 b보다 큽니다.")
+# elif a < b:
+#     print("a가 b 보다 작습니다.")
+# elif a == b:
+#     print("a와 b는 같습니다.")
+
+# a = 3
+# b = 4
+#
+# print(a and b) # => 4
+
+# a = 3
+# b = 4 # =>3
+#
+# print(a or b) #=> 3
+
+
+# print(bool(not(0)))
+
+# a = "A"   #in = ~안에 있냐고 물어볼 때 사용한다.
+# b = "Python"
+# if a in ["A","B","c"]:
+#     print(a)
+
+# if 'y' not in b:
+#     print("y")
+# else:
+#     print(b)
+
+# # 문제 풀기
+# a, b = input().split()
+# a = int(a)
+# b = int(b)
+# timer = int(input("timer: "))
+# c = b + timer
+#
+# if c >= 60:
+#     a += c // 60
+#     c = c % 60
+#     if a >= 24:
+#         a = a % 24
+# print(a,c)
+
+
+# 더하기 싸이클
+# N = int(input("N: "))
+# M = N
+# r = 0
+# while True:
+#     r += 1
+#     a = M%10
+#     b = a+M//10
+#     c = b%10
+#     M = 10*a+c
+#     if N == M:
+#         break
+#
+# print(r)
+
+# 다른 해설
+# N = int(input("N: "))
+# M = N
+# cnt = 0
+#
+# while True:
+#     part1 = M % 10 #=> 6
+#     part2 = (M // 10 + M % 10) % 10 #=> 8
+#     M = part1 * 10 + part2
+#     cnt += 1
+#     if M == N:
+#         break
+# print(cnt)
+
+
